@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7847607322EF3F910006138C /* SnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7847607222EF3F910006138C /* SnackBar.swift */; };
+		7847607622EF43830006138C /* ProjectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7847607522EF43830006138C /* ProjectListViewController.swift */; };
+		7847607922EF45570006138C /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7847607822EF45570006138C /* ProjectCell.swift */; };
+		7847607B22F0341F0006138C /* TimeCardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7847607A22F0341F0006138C /* TimeCardListViewController.swift */; };
+		7847607D22F039680006138C /* TimeCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7847607C22F039680006138C /* TimeCardCell.swift */; };
+		7847607F22F042EA0006138C /* TimeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7847607E22F042EA0006138C /* TimeCardViewController.swift */; };
+		78EA1CD322EEDB2500E93288 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA1CD222EEDB2500E93288 /* AppDelegate.swift */; };
+		78EA1CD522EEDB2500E93288 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA1CD422EEDB2500E93288 /* ViewController.swift */; };
+		78EA1CD822EEDB2500E93288 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78EA1CD622EEDB2500E93288 /* Main.storyboard */; };
+		78EA1CDA22EEDB2600E93288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78EA1CD922EEDB2600E93288 /* Assets.xcassets */; };
+		78EA1CDD22EEDB2600E93288 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78EA1CDB22EEDB2600E93288 /* LaunchScreen.storyboard */; };
+		78EA1CE822EEDB2600E93288 /* BillableHoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA1CE722EEDB2600E93288 /* BillableHoursTests.swift */; };
+		78EA1CF422EEDBA400E93288 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA1CF322EEDBA400E93288 /* Project.swift */; };
+		78EA1CF722EEDBD300E93288 /* TimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA1CF622EEDBD300E93288 /* TimeCard.swift */; };
+		78EA1CF922EEDBE300E93288 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA1CF822EEDBE300E93288 /* Employee.swift */; };
+		78EA1CFB22EEDE3400E93288 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA1CFA22EEDE3400E93288 /* Utils.swift */; };
+		78EA1D0022EEE5CA00E93288 /* BillableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA1CFF22EEE5CA00E93288 /* BillableViewModel.swift */; };
+		78EA1D0222EEE65C00E93288 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA1D0122EEE65C00E93288 /* LoginViewModel.swift */; };
+		78EA1D0422EEEBF600E93288 /* LoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA1D0322EEEBF600E93288 /* LoginTest.swift */; };
+		78EA1D0A22EF082100E93288 /* TimeCardTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA1D0922EF082100E93288 /* TimeCardTest.swift */; };
+		95B6C049A0BED3EC43A82DDC /* Pods_BillableHoursTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2263DD704B086B2057B8758E /* Pods_BillableHoursTests.framework */; };
+		9ACD4A440DA04A4C78B9A70F /* Pods_BillableHours.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF010214E10D52B5B5C31323 /* Pods_BillableHours.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78EA1CE422EEDB2600E93288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78EA1CC722EEDB2500E93288 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78EA1CCE22EEDB2500E93288;
+			remoteInfo = BillableHours;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16C7C635755B421F976D3F8D /* Pods-BillableHoursTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillableHoursTests.debug.xcconfig"; path = "Target Support Files/Pods-BillableHoursTests/Pods-BillableHoursTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2263DD704B086B2057B8758E /* Pods_BillableHoursTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BillableHoursTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23EACC5AE7B594C661845123 /* Pods-BillableHoursTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillableHoursTests.release.xcconfig"; path = "Target Support Files/Pods-BillableHoursTests/Pods-BillableHoursTests.release.xcconfig"; sourceTree = "<group>"; };
+		4758CECBE44EFAA73B060D49 /* Pods-BillableHours.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillableHours.release.xcconfig"; path = "Target Support Files/Pods-BillableHours/Pods-BillableHours.release.xcconfig"; sourceTree = "<group>"; };
+		7847607222EF3F910006138C /* SnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBar.swift; sourceTree = "<group>"; };
+		7847607522EF43830006138C /* ProjectListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListViewController.swift; sourceTree = "<group>"; };
+		7847607822EF45570006138C /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		7847607A22F0341F0006138C /* TimeCardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCardListViewController.swift; sourceTree = "<group>"; };
+		7847607C22F039680006138C /* TimeCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCardCell.swift; sourceTree = "<group>"; };
+		7847607E22F042EA0006138C /* TimeCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCardViewController.swift; sourceTree = "<group>"; };
+		78EA1CCF22EEDB2500E93288 /* BillableHours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillableHours.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78EA1CD222EEDB2500E93288 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78EA1CD422EEDB2500E93288 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		78EA1CD722EEDB2500E93288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78EA1CD922EEDB2600E93288 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78EA1CDC22EEDB2600E93288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78EA1CDE22EEDB2600E93288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78EA1CE322EEDB2600E93288 /* BillableHoursTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillableHoursTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78EA1CE722EEDB2600E93288 /* BillableHoursTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillableHoursTests.swift; sourceTree = "<group>"; };
+		78EA1CE922EEDB2600E93288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78EA1CF322EEDBA400E93288 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		78EA1CF622EEDBD300E93288 /* TimeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCard.swift; sourceTree = "<group>"; };
+		78EA1CF822EEDBE300E93288 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		78EA1CFA22EEDE3400E93288 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		78EA1CFF22EEE5CA00E93288 /* BillableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillableViewModel.swift; sourceTree = "<group>"; };
+		78EA1D0122EEE65C00E93288 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		78EA1D0322EEEBF600E93288 /* LoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTest.swift; sourceTree = "<group>"; };
+		78EA1D0922EF082100E93288 /* TimeCardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCardTest.swift; sourceTree = "<group>"; };
+		CF010214E10D52B5B5C31323 /* Pods_BillableHours.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BillableHours.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D72503CEFE69A61B55A17797 /* Pods-BillableHours.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillableHours.debug.xcconfig"; path = "Target Support Files/Pods-BillableHours/Pods-BillableHours.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78EA1CCC22EEDB2500E93288 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ACD4A440DA04A4C78B9A70F /* Pods_BillableHours.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78EA1CE022EEDB2600E93288 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B6C049A0BED3EC43A82DDC /* Pods_BillableHoursTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7847607422EF42EF0006138C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7847607222EF3F910006138C /* SnackBar.swift */,
+				78EA1CFA22EEDE3400E93288 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7847607722EF453F0006138C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7847607822EF45570006138C /* ProjectCell.swift */,
+				7847607C22F039680006138C /* TimeCardCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78EA1CC622EEDB2500E93288 = {
+			isa = PBXGroup;
+			children = (
+				78EA1CD122EEDB2500E93288 /* BillableHours */,
+				78EA1CE622EEDB2600E93288 /* BillableHoursTests */,
+				78EA1CD022EEDB2500E93288 /* Products */,
+				DDAD9BF1D00002FF970592B5 /* Pods */,
+				7D03B11E159C2A003B414841 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		78EA1CD022EEDB2500E93288 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78EA1CCF22EEDB2500E93288 /* BillableHours.app */,
+				78EA1CE322EEDB2600E93288 /* BillableHoursTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78EA1CD122EEDB2500E93288 /* BillableHours */ = {
+			isa = PBXGroup;
+			children = (
+				7847607722EF453F0006138C /* View */,
+				78EA1CFD22EEE57400E93288 /* Controller */,
+				78EA1CFC22EEE56800E93288 /* ViewModel */,
+				78EA1CF222EEDB6300E93288 /* Model */,
+				78EA1CD222EEDB2500E93288 /* AppDelegate.swift */,
+				7847607422EF42EF0006138C /* Utils */,
+				78EA1CD622EEDB2500E93288 /* Main.storyboard */,
+				78EA1CD922EEDB2600E93288 /* Assets.xcassets */,
+				78EA1CDB22EEDB2600E93288 /* LaunchScreen.storyboard */,
+				78EA1CDE22EEDB2600E93288 /* Info.plist */,
+			);
+			path = BillableHours;
+			sourceTree = "<group>";
+		};
+		78EA1CE622EEDB2600E93288 /* BillableHoursTests */ = {
+			isa = PBXGroup;
+			children = (
+				78EA1D0322EEEBF600E93288 /* LoginTest.swift */,
+				78EA1CE722EEDB2600E93288 /* BillableHoursTests.swift */,
+				78EA1D0922EF082100E93288 /* TimeCardTest.swift */,
+				78EA1CE922EEDB2600E93288 /* Info.plist */,
+			);
+			path = BillableHoursTests;
+			sourceTree = "<group>";
+		};
+		78EA1CF222EEDB6300E93288 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78EA1CF322EEDBA400E93288 /* Project.swift */,
+				78EA1CF622EEDBD300E93288 /* TimeCard.swift */,
+				78EA1CF822EEDBE300E93288 /* Employee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78EA1CFC22EEE56800E93288 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				78EA1CFF22EEE5CA00E93288 /* BillableViewModel.swift */,
+				78EA1D0122EEE65C00E93288 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		78EA1CFD22EEE57400E93288 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78EA1CD422EEDB2500E93288 /* ViewController.swift */,
+				7847607522EF43830006138C /* ProjectListViewController.swift */,
+				7847607A22F0341F0006138C /* TimeCardListViewController.swift */,
+				7847607E22F042EA0006138C /* TimeCardViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7D03B11E159C2A003B414841 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF010214E10D52B5B5C31323 /* Pods_BillableHours.framework */,
+				2263DD704B086B2057B8758E /* Pods_BillableHoursTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDAD9BF1D00002FF970592B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D72503CEFE69A61B55A17797 /* Pods-BillableHours.debug.xcconfig */,
+				4758CECBE44EFAA73B060D49 /* Pods-BillableHours.release.xcconfig */,
+				16C7C635755B421F976D3F8D /* Pods-BillableHoursTests.debug.xcconfig */,
+				23EACC5AE7B594C661845123 /* Pods-BillableHoursTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78EA1CCE22EEDB2500E93288 /* BillableHours */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78EA1CEC22EEDB2600E93288 /* Build configuration list for PBXNativeTarget "BillableHours" */;
+			buildPhases = (
+				459059CACA89D329450FBB70 /* [CP] Check Pods Manifest.lock */,
+				78EA1CCB22EEDB2500E93288 /* Sources */,
+				78EA1CCC22EEDB2500E93288 /* Frameworks */,
+				78EA1CCD22EEDB2500E93288 /* Resources */,
+				F4344475D3C8A06E485054E3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BillableHours;
+			productName = BillableHours;
+			productReference = 78EA1CCF22EEDB2500E93288 /* BillableHours.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78EA1CE222EEDB2600E93288 /* BillableHoursTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78EA1CEF22EEDB2600E93288 /* Build configuration list for PBXNativeTarget "BillableHoursTests" */;
+			buildPhases = (
+				506A936CC7102F93D596A98B /* [CP] Check Pods Manifest.lock */,
+				78EA1CDF22EEDB2600E93288 /* Sources */,
+				78EA1CE022EEDB2600E93288 /* Frameworks */,
+				78EA1CE122EEDB2600E93288 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78EA1CE522EEDB2600E93288 /* PBXTargetDependency */,
+			);
+			name = BillableHoursTests;
+			productName = BillableHoursTests;
+			productReference = 78EA1CE322EEDB2600E93288 /* BillableHoursTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78EA1CC722EEDB2500E93288 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Olusegun Solaja";
+				TargetAttributes = {
+					78EA1CCE22EEDB2500E93288 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					78EA1CE222EEDB2600E93288 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 78EA1CCE22EEDB2500E93288;
+					};
+				};
+			};
+			buildConfigurationList = 78EA1CCA22EEDB2500E93288 /* Build configuration list for PBXProject "BillableHours" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78EA1CC622EEDB2500E93288;
+			productRefGroup = 78EA1CD022EEDB2500E93288 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78EA1CCE22EEDB2500E93288 /* BillableHours */,
+				78EA1CE222EEDB2600E93288 /* BillableHoursTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78EA1CCD22EEDB2500E93288 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78EA1CDD22EEDB2600E93288 /* LaunchScreen.storyboard in Resources */,
+				78EA1CDA22EEDB2600E93288 /* Assets.xcassets in Resources */,
+				78EA1CD822EEDB2500E93288 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78EA1CE122EEDB2600E93288 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		459059CACA89D329450FBB70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BillableHours-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		506A936CC7102F93D596A98B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BillableHoursTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4344475D3C8A06E485054E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BillableHours/Pods-BillableHours-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BillableHours/Pods-BillableHours-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78EA1CCB22EEDB2500E93288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78EA1D0022EEE5CA00E93288 /* BillableViewModel.swift in Sources */,
+				7847607B22F0341F0006138C /* TimeCardListViewController.swift in Sources */,
+				7847607F22F042EA0006138C /* TimeCardViewController.swift in Sources */,
+				7847607322EF3F910006138C /* SnackBar.swift in Sources */,
+				78EA1CD522EEDB2500E93288 /* ViewController.swift in Sources */,
+				78EA1CD322EEDB2500E93288 /* AppDelegate.swift in Sources */,
+				78EA1CF722EEDBD300E93288 /* TimeCard.swift in Sources */,
+				78EA1D0222EEE65C00E93288 /* LoginViewModel.swift in Sources */,
+				7847607D22F039680006138C /* TimeCardCell.swift in Sources */,
+				7847607922EF45570006138C /* ProjectCell.swift in Sources */,
+				78EA1CF922EEDBE300E93288 /* Employee.swift in Sources */,
+				7847607622EF43830006138C /* ProjectListViewController.swift in Sources */,
+				78EA1CF422EEDBA400E93288 /* Project.swift in Sources */,
+				78EA1CFB22EEDE3400E93288 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78EA1CDF22EEDB2600E93288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78EA1D0A22EF082100E93288 /* TimeCardTest.swift in Sources */,
+				78EA1CE822EEDB2600E93288 /* BillableHoursTests.swift in Sources */,
+				78EA1D0422EEEBF600E93288 /* LoginTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78EA1CE522EEDB2600E93288 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78EA1CCE22EEDB2500E93288 /* BillableHours */;
+			targetProxy = 78EA1CE422EEDB2600E93288 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78EA1CD622EEDB2500E93288 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78EA1CD722EEDB2500E93288 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		78EA1CDB22EEDB2600E93288 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78EA1CDC22EEDB2600E93288 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78EA1CEA22EEDB2600E93288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78EA1CEB22EEDB2600E93288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78EA1CED22EEDB2600E93288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D72503CEFE69A61B55A17797 /* Pods-BillableHours.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BillableHours/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.billable.BillableHours;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78EA1CEE22EEDB2600E93288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4758CECBE44EFAA73B060D49 /* Pods-BillableHours.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BillableHours/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.billable.BillableHours;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78EA1CF022EEDB2600E93288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16C7C635755B421F976D3F8D /* Pods-BillableHoursTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BillableHoursTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.billable.BillableHoursTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BillableHours.app/BillableHours";
+			};
+			name = Debug;
+		};
+		78EA1CF122EEDB2600E93288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23EACC5AE7B594C661845123 /* Pods-BillableHoursTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BillableHoursTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.billable.BillableHoursTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BillableHours.app/BillableHours";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78EA1CCA22EEDB2500E93288 /* Build configuration list for PBXProject "BillableHours" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78EA1CEA22EEDB2600E93288 /* Debug */,
+				78EA1CEB22EEDB2600E93288 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78EA1CEC22EEDB2600E93288 /* Build configuration list for PBXNativeTarget "BillableHours" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78EA1CED22EEDB2600E93288 /* Debug */,
+				78EA1CEE22EEDB2600E93288 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78EA1CEF22EEDB2600E93288 /* Build configuration list for PBXNativeTarget "BillableHoursTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78EA1CF022EEDB2600E93288 /* Debug */,
+				78EA1CF122EEDB2600E93288 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78EA1CC722EEDB2500E93288 /* Project object */;
+}

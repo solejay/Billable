@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BillableHours" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BILLABLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3t-QT-msy">
+                                <rect key="frame" x="135.5" y="276" width="143" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="7fa-zC-Ilj"/>
+                                    <constraint firstAttribute="height" constant="44" id="Ehf-Z4-323"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aRD-Gg-zid">
+                                <rect key="frame" x="60" y="433" width="295" height="45"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Z19-SA-Cl4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jgn-7v-Wmy">
+                                <rect key="frame" x="60" y="486" width="295" height="45"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeW-PD-Hvl">
+                                <rect key="frame" x="60" y="550" width="295" height="50"/>
+                                <color key="backgroundColor" red="0.024358272475424173" green="0.68451372236785502" blue="0.079463323062474556" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TWj-O8-3MG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="W3t-QT-msy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="4YL-cK-3Qn"/>
+                            <constraint firstItem="zeW-PD-Hvl" firstAttribute="trailing" secondItem="jgn-7v-Wmy" secondAttribute="trailing" id="Ghk-En-mbN"/>
+                            <constraint firstItem="jgn-7v-Wmy" firstAttribute="leading" secondItem="aRD-Gg-zid" secondAttribute="leading" id="J3J-H0-Kyd"/>
+                            <constraint firstItem="jgn-7v-Wmy" firstAttribute="top" secondItem="aRD-Gg-zid" secondAttribute="bottom" constant="8" id="Jb5-ZH-PgU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aRD-Gg-zid" secondAttribute="trailing" constant="59" id="JzO-UP-DTl"/>
+                            <constraint firstItem="zeW-PD-Hvl" firstAttribute="leading" secondItem="jgn-7v-Wmy" secondAttribute="leading" id="Kdh-Aq-rsy"/>
+                            <constraint firstItem="jgn-7v-Wmy" firstAttribute="height" secondItem="aRD-Gg-zid" secondAttribute="height" id="cbZ-gd-B7w"/>
+                            <constraint firstItem="aRD-Gg-zid" firstAttribute="top" secondItem="W3t-QT-msy" secondAttribute="bottom" constant="113" id="gJ3-aX-cMs"/>
+                            <constraint firstItem="jgn-7v-Wmy" firstAttribute="trailing" secondItem="aRD-Gg-zid" secondAttribute="trailing" id="pyf-T8-kDS"/>
+                            <constraint firstItem="aRD-Gg-zid" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="veN-RE-yTG"/>
+                            <constraint firstItem="W3t-QT-msy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yho-Cc-9wj"/>
+                            <constraint firstItem="zeW-PD-Hvl" firstAttribute="top" secondItem="jgn-7v-Wmy" secondAttribute="bottom" constant="19" id="zS6-7K-abu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="zeW-PD-Hvl" id="Vgx-s5-a0j"/>
+                        <outlet property="passwordTextField" destination="jgn-7v-Wmy" id="9I8-FY-F3O"/>
+                        <outlet property="usernameTextField" destination="aRD-Gg-zid" id="ZTI-Zq-Ai6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+</document>
